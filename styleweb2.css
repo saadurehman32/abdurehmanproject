@@ -1,0 +1,578 @@
+@import url('https://fonts.googleapis.com/css2?family=Amita:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Brygada+1918&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis&family=PT+Sans+Narrow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif&family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif&family=PT+Sans&family=Source+Serif+4:opsz@8..60&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Guntur&display=swap');
+@font-face {
+    font-family: 'Hind Kochi Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Hind Kochi Regular'), url('HindKochi-Regular.woff') format('woff');
+    }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    
+    background-color: #161b21;
+    
+    overflow-x: hidden;
+}
+.navhead{
+    /*background-color: aliceblue;*/
+    height: 50px;
+    width: 40vw;
+    text-align: center;
+    margin: auto;
+}
+.navhead ul{
+    list-style: none;
+}
+.navhead li {
+    display: inline-block;
+    justify-items: center;
+    padding: 12px 25px;
+}
+.navhead a {
+    color: #F4A950;
+    
+    text-decoration: none;
+    font-size: 21px;
+}
+.navhead #home {
+    color: white;
+}
+
+.navhead a:hover{
+    color: rgb(9, 230, 230);
+    color: white;
+}
+
+.flex{
+    
+}
+.personal{
+    width: 30vw;
+    height: 70vh;
+    margin-left: 4vw;
+    margin-top: 90px;
+    /*border: 2px solid black;*/
+    border-radius: 50px;
+    border: 2px solid #F4A950;
+
+    
+}
+.personal img{
+    border-radius: 50px;
+    margin-top: 40px;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*.personal .icon {
+    text-align: center;
+    margin-top: 15px;
+}
+.personal .icon #whatsapp{
+    font-size: 30px;
+    color:  green;
+}
+.personal .icon #instagram{
+    font-size: 30px;
+    color:  purple;
+}
+.personal .icon #facebook{
+    font-size: 30px;
+    color:  skyblue;
+}
+.personal .icon #twitter{
+    font-size: 30px;
+    color: blue;
+}*/
+
+
+.personal h1{
+    text-align: center;
+    font-family: 'Amita', cursive;
+    font-size: 37px;
+    color:#F4A950;
+
+}
+.personal p{
+    color:#F4A950;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Amita', cursive;
+}
+    
+.personal .cv{
+    height: fit-content;
+    width: fit-content;
+    margin: 30px;
+    display: block;
+    margin-left: auto;
+  margin-right: auto;
+}
+.shape1{
+    width: 200px;
+    height: 30px;
+    background-color:#F4A950;
+    margin-top:15px;
+  transform: skew(20deg);
+  
+
+}
+.personal .shape1 p{
+    color:black;
+}
+.shape1 :hover {
+    background-color: #a2a2a2;
+    width: 200px;
+    height: 30px;
+}
+
+
+
+
+
+                                   /* THIS IS START OF CV TABS  */
+.education{
+    width: 60vw;
+    height: 70vh;
+    border: 2px solid black;
+    border-radius: 50px;
+    display: none;
+    position: absolute;
+    top: 48.5px;
+    left: 0;
+    margin-top: 90px;
+    margin-left: 37vw;
+    background-color: #F4A950;
+}
+.education h1{
+    color: #F4A950;
+   text-align: center;
+   margin-top: 50px;
+   font-size: 40px;
+    font-family: 'Amita', cursive;
+}
+.shape1:hover + .education{
+    display: block;
+    transform: skew(0deg);
+    background-color: black;
+    opacity: 100;
+}
+.skills{
+    width: 60vw;
+    height: 70vh;
+    border: 2px solid black;
+    border-radius: 50px;
+    display: none;
+    position: absolute;
+    top: 48.5px;
+    left: 0;
+    margin-top: 90px;
+    margin-left: 37vw;
+    background-color: #161b21;
+}
+.skills h1{
+    color: #F4A950;
+    text-align: center;
+    margin-top: 50px;
+   font-size: 40px;
+    font-family: 'Amita', cursive;
+}
+.shape1:hover + .skills{
+    display: block;
+    transform: skew(0deg);
+}
+.experience{
+    width: 60vw;
+    height: 70vh;
+    border: 2px solid black;
+    border-radius: 50px;
+    display: none;
+    position: absolute;
+    top: 48.5px;
+    left: 0;
+    margin-top: 90px;
+    margin-left: 37vw;
+    background-color: #161b21;
+}
+.experience h1{
+    color: #F4A950;
+    text-align: center;
+    margin-top: 50px;
+   font-size: 40px;
+    font-family: 'Amita', cursive;
+}
+
+.shape1:hover + .experience{
+    display: block;
+    transform: skew(0deg);
+}   
+.workshop{
+    width: 60vw;
+    height: 70vh;
+    border: 2px solid black;
+    border-radius: 50px;
+    display: none;
+    position: absolute;
+    top: 48.5px;
+    left: 0;
+    margin-top: 90px;
+    margin-left: 37vw;
+    background-color: #161b21;
+}
+.workshop h1{
+    color: #F4A950;
+    text-align: center;
+    margin-top: 50px;
+   font-size: 40px;
+    font-family: 'Amita', cursive;
+}
+.shape1:hover + .workshop{
+    display: block;
+    transform: skew(0deg);
+}            
+                                    /* THIS IS END OF CV TABS  */
+
+
+.myself{
+    width: 60vw;
+    height: 70vh;
+    margin-top: 90px;
+    margin-left: 37vw;
+    border: 2px solid #F4A950;
+    border-radius: 50px;
+    position: absolute;
+    top: 48.5px;
+    left: 0                 
+}
+.myself h1{
+    color: #F4A950;
+    margin-top: 50px;
+    margin-left: 50px;
+    font-size: 45px;
+    font-family: 'Amita', cursive;
+}
+.myself h2{
+    margin-left: 50px;
+    color: #F4A950;
+    font-family: 'Amita', cursive;
+}
+.myself .centreintro{
+       height: 50%;
+       width: 70%;
+       /*background-color: aliceblue;*/
+       display: block;
+       margin-left: auto;
+       margin-right: auto;
+       margin-top: 20px;
+}
+.myself .centreintro p{
+    color: #F4A950;
+    color: white;
+    font-family: 'Brygada 1918', serif;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+
+                                /* This is latest projects */
+
+.latestprojects{
+    width: 90vw;
+    height: 80vh;
+    
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+     /* border: 4px solid #F4A950;   */
+    
+}
+.latestprojects #projectheading{
+    text-align: center;
+    padding-top: 30px;
+    color: #F4A950;
+    font-size: 20px;
+    
+    font-family: 'Amita', cursive;
+}
+.latestprojects #variety{
+    text-align: center;
+    font-size: 15px;
+    color: #F4A950;
+    letter-spacing: 2px;
+}
+
+.showcaseproject{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    width: 100%;
+    height: 70%;
+   margin-left:auto;
+   margin-right: auto;
+    /* border: 2px solid gold;   */
+}
+.showcaseproject .work{
+   border: 2px solid #F4A950;
+    height: 80%;
+    width: 20%;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 40px;
+    position: relative;
+    display: block;
+}
+.video-overlay{
+    position: absolute;
+    top: 60%;
+    width: 100%;
+    height: 40%;
+    background-color: rgba(0, 0, 0, 0.075);
+    border: 2px;
+    opacity: 0;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    transition: 0.3s ease-out;
+    
+}
+.showcaseproject .work:hover .video-overlay{
+    opacity: 1;
+}
+
+.video-overlay .displayicons{
+    width: 50%;
+    height: 25%;
+      /* background-color: aliceblue; */
+    text-align: center;
+    align-content: center;
+    margin-top: auto;
+    margin-bottom:auto ;
+    margin-left: auto;
+    margin-right:auto ;
+}
+.video-overlay .displayicons i {
+margin-right: 12px;
+margin-left: 3px;
+color: #F4A950;
+align-items: center;
+
+
+
+}
+.video-overlay .displayicons #playbutton{
+    font-size: 27px;
+    color: #F4A950;
+    margin-top: 4px;
+
+}
+
+
+                               /*This is message domain of website*/
+.messagecentre{
+    width: 100vw;
+    height: 70vh;
+    position: absolute;
+    top: 170vh;
+    /* background-color: darkseagreen; */
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+}
+.messagecentre .messagedetails{
+    width: 60%;
+    height: 90%;
+   border-radius: 2px;
+   /* border: 2px solid #a2a2a2;  */
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 20px;
+
+}
+.messagecentre .messagedetails p{
+    color: #F4A950;
+    font-size: 40px;
+    font-family: 'Amita', cursive;
+    margin-top: 20px;
+    margin-left: 25px;
+}
+.messagecentre .messagedetails .points p {
+    font-size: 15px;
+     font-family: 'PT Sans', sans-serif;
+}
+.messagecentre  .messageme{
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 90%;
+   /* background-color: coral;*/
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    
+    
+}
+.messageme form{
+    text-align: center;
+    margin-top: 20px;
+}
+ .messageme span{
+    font-size: 35px;
+    font-weight: bolder;
+    font-family: 'Amita', cursive;
+    color: #F4A950;
+    
+}
+.messageme form .input-field{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+.messageme form .input-field #upperthree{
+    width: 20em;
+    height: 32px;
+    border-radius: 3px;
+    border: 2px solid #F4A950;
+    background-color: #161b21;
+}
+.messageme form #input-letter{
+    height: fit-content;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: cyan;
+}
+.messageme form  #lower4{
+    margin-top: 10px;
+    width: 80%;
+    height: 30px;
+    border-radius: 3px;
+    border: 2px solid #F4A950;
+    background-color: #161b21;
+}
+.messageme form  #lower5{
+    width: 80%;
+    
+    border-radius: 3px;
+    border: 2px solid #F4A950;
+    background-color: #161b21;
+}
+.messageme form #lower6{
+    width: 20%;
+    height: 30px;
+    
+    border-radius: 3px;
+    border: 2px solid #F4A950;
+    background-color: #F4A950;
+}
+                                /* This is end of message domain */
+         
+                             /* This is footer of page */
+.footer{
+    height:220px;
+    width:100vw;
+    position: absolute;
+    top: 245vh;
+    /* background-color: burlywood; */
+    display: flex;
+    flex-direction: column;
+    border-top: 2px solid #F4A950;
+    margin: 0;
+    padding: 0;
+}
+.footer .sarstudio{
+    width: 100%;
+    height: 45px;
+    background-color: #F4A950; 
+}
+.footer .sarstudio h1{
+    text-align: center;
+   line-height: 45px;
+   color: #161b21;
+   font-family: 'Inria Serif', serif;
+   letter-spacing: 15px;
+   margin: 0;
+   padding: 0;
+}
+
+.footer .conveincinglines{
+    width: 50%;
+    height: 40%;
+    /* background-color: blueviolet; */
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    margin-top: 5px;
+}
+.footer .conveincinglines .conline1{
+    width:100% ;
+    height: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.footer .conveincinglines p{
+    color: #F5F5F5;
+    font-family: 'Source Serif 4', serif;
+    font-size: 15px;
+}
+.footer .socialicons{
+    width: 60%;
+    height: auto;
+    /* background-color: aqua; */
+    margin-left: auto;
+    margin-right: auto;
+}
+.footer .socialicons .stylingscicons{
+    font-size: 25px;
+    color: #F4A950;
+    float: right;
+    padding-left: 7px;
+    padding-right: 5px;
+}
+
+
+.footer .hlandcopyright{
+    width: 100%;
+    height: 20%;
+     /* background-color: chartreuse;  */
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    justify-content: space-around;
+
+}
+.footer .hlandcopyright .h1line{
+    /* margin-top: 20px; */
+    width: 60%;
+    border: 1px solid #F5F5F5;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.footer .hlandcopyright .copyright{
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    /* background-color: #a2a2a2; */
+    position: absolute;
+    bottom: 0;
+}
+.footer .hlandcopyright .copyright p{
+    font-family: 'Hind Guntur', sans-serif;
+    font-weight: 500;
+    color: #F5F5F5;
+    letter-spacing: 3px;
+}
+
